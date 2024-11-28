@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style type="text/css">
+      /* 自定义滚动条样式 */
+      ::-webkit-scrollbar {
+        /* 滚动条整体样式 */
+        width: 6px;
+        /* 宽高分别对应横竖滚动条尺寸 */
+        height: 1px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        /* 滚动条里面小方块 */
+        border-radius: 6px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: #dcdfe6;
+      }
+
+      ::-webkit-scrollbar-track {
+        /* 滚动条里面的轨道 */
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        background: #dcdfe6;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
